@@ -10,3 +10,6 @@ jobs:
     steps:
       - name: "my-step"
         run: echo "Hello there"
+
+      - name: Muestra el contenido de la carpeta
+        run: ls -la
