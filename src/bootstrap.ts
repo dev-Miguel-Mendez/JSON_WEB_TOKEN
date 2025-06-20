@@ -11,6 +11,7 @@ const setENV = ()=>{
     dotenv.config({path: 'config/shared.env'})
 
 
+    
      //* Check for required environment variables or throw stop execution.   
     const requiredVars = ['PORT', 'STARTUP']
 
