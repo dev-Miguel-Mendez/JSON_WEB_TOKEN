@@ -1,0 +1,17 @@
+name: CHECKOUT_EXAMPLE
+on:
+  push:
+    branches: ['main']
+jobs:
+  paiky_checkout:
+      runs-on: ubuntu-latest
+      steps:
+        - name:  CHECKOUT_TEST
+          uses: actions/checkout@v3
+        - name: 'Print working directory'
+          run: ls -la
+    
+        
+
+
+
