@@ -2,3 +2,12 @@ name: CICD
 on:
   push:
     branches: [master]
+
+jobs:
+  #$ We can call jobs whatever we want and we can have multiple.
+  paiky_build: #* We will make this job log into DockerHub, build the image and push it to DockerHub.
+    runs-on: ubuntu-latest #$ I've seen people omit this line.
+    steps: 
+
+      - name: Checkout source code
+        uses: actions/checkout@v3
