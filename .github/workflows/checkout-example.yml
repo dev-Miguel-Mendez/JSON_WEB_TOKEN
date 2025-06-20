@@ -1,7 +1,7 @@
 name: CHECKOUT_EXAMPLE
 on:
   push:
-    branches: ['main']
+    branches: ['master']
 jobs:
   paiky_checkout:
       runs-on: ubuntu-latest
