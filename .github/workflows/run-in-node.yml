@@ -21,4 +21,3 @@ jobs:
         #! run: npm install # We don't use this (BUT WE COULD) because it is less performant, amongst other reasons.
         - run: npm ci #$ These are SAME LEVEL as "name" and "uses"
         - run: npm run test
-        - run: npm run dev_local
