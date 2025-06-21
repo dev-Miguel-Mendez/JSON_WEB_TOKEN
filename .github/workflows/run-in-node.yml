@@ -5,7 +5,7 @@ on:
 
 concurrency: #* Avoiding concurrent runs.
   group: paiky-lock #* Make sure to also put this in the other workflows
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   run_in_node_paiky:
@@ -13,6 +13,7 @@ jobs:
       steps:
         - name: "Checkout code" #! Name is optional
           uses: actions/checkout@v4
+          
         - name: "Setup Node" #! Name is optional
           uses: actions/setup-node@v4
           with:
